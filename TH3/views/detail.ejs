@@ -1,0 +1,31 @@
+<%- include('layouts/header') %>
+<%- include('layouts/navbar') %>
+
+<div class="container my-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <div class="card shadow">
+                <img class="card-img-top" src="https://dummyimage.com/900x400/ced4da/6c757d" alt="Product Image">
+                <div class="card-body">
+                    <h1 class="card-title fw-bold"><%= item.name %></h1>
+                    <hr>
+                    <p class="lead"><%= item.description %></p>
+                    <h4 class="text-primary">Giá tham khảo: <%= item.price %> VNĐ</h4>
+                    
+                    <div class="my-4">
+                        <strong>Trạng thái: </strong>
+                        <% if (item.hot) { %>
+                            <span class="badge bg-danger">Sản phẩm nổi bật (HOT)</span>
+                        <% } else { %>
+                            <span class="badge bg-secondary">Bình thường</span>
+                        <% } %>
+                    </div>
+                    
+                    <a href="/list" class="btn btn-outline-secondary">← Quay lại danh sách</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<%- include('layouts/footer') %>

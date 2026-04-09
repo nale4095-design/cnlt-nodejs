@@ -1,0 +1,46 @@
+<%- include('layouts/header') %>
+<%- include('layouts/navbar') %>
+
+<header class="py-5 bg-light border-bottom mb-4">
+    <div class="container">
+        <div class="text-center my-5">
+            <h1 class="fw-bolder">Chào mừng đến với Tech Review!</h1>
+            <p class="lead mb-0">Nơi cập nhật những thông tin công nghệ mới nhất</p>
+        </div>
+    </div>
+</header>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8">
+            <div class="card mb-4 shadow-sm">
+                <a href="#!"><img class="card-img-top" src="https://dummyimage.com/850x350/dee2e6/6c757d.jpg" alt="..." /></a>
+                <div class="card-body">
+                    <div class="small text-muted">22 Tháng 3, 2024</div>
+                    <h2 class="card-title">Bài viết nổi bật</h2>
+                    <p class="card-text">Đây là trang chủ được xây dựng bằng Express và EJS. Bạn có thể xem danh sách sản phẩm bằng cách nhấn vào mục "Sản phẩm" trên thanh điều hướng.</p>
+                    <a class="btn btn-primary" href="/list">Xem danh sách ngay →</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4">
+            <div class="card mb-4">
+                <div class="card-header">Tìm kiếm</div>
+                <div class="card-body">
+                    <div class="input-group">
+                        <input class="form-control" type="text" placeholder="Nhập từ khóa..." />
+                        <button class="btn btn-primary" id="button-search" type="button">Go!</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card mb-4">
+                <div class="card-header">Thông báo</div>
+                <div class="card-body">Chào mừng bạn đã ghé thăm bài thực hành số 3 của mình!</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<%- include('layouts/footer') %>

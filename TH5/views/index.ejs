@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Blog của Nana</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Danh sách bài viết</h1>
+
+        <a href="/blogposts/new" class="btn btn-primary">Tạo bài viết mới</a>
+
+        <hr>
+
+        <ul>
+        <% posts.forEach(post => { %>
+            <li class="post-item">
+                <strong><%= post.title %></strong>
+
+                <div class="actions">
+                    <a href="/blogposts/<%= post._id %>">Xem</a>
+                    <a href="/blogposts/edit/<%= post._id %>">Sửa</a>
+
+                    <form action="/blogposts/delete/<%= post._id %>?_method=DELETE" method="POST" style="display:inline;">
+                        <button type="submit" class="btn btn-delete" onclick="return confirm('Bạn có chắc muốn xóa?')">Xóa</button>
+                    </form>
+                </div>
+            </li>
+        <% }) %>
+        </ul>
+    </div>
+</body>
+</html>

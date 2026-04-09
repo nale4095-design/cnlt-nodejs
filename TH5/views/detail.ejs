@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= post.title %></title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <article>
+            <h1><%= post.title %></h1>
+            <p class="content"><%= post.content %></p>
+        </article>
+
+        <hr>
+
+        <a href="/blogposts" class="btn">← Về trang chủ</a>
+        <a href="/blogposts/edit/<%= post._id %>" class="btn btn-primary">Sửa</a>
+    </div>
+</body>
+</html>

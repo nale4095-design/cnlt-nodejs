@@ -1,0 +1,150 @@
+/* Import font chữ hiện đại từ Google */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap');
+
+:root {
+    --primary: #4361ee;
+    --primary-hover: #3f37c9;
+    --danger: #ef233c;
+    --bg: #f8f9fc;
+    --text: #2b2d42;
+    --gray: #8d99ae;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+    margin: 0;
+    padding: 20px;
+}
+
+/* Container */
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.04);
+}
+
+/* Tiêu đề BIẾN ĐỔI MÀU SẮC */
+h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 30px;
+    /* Hiệu ứng Gradient (Xanh dương sang Tím) */
+    background: linear-gradient(135deg, #4361ee 0%, #7209b7 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Danh sách bài viết */
+ul {
+    padding: 0;
+    margin-top: 20px;
+}
+
+.post-item {
+    padding: 20px;
+    border: 1px solid #f1f3f5;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.post-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    border-color: var(--primary);
+}
+
+.post-item strong {
+    font-size: 1.1rem;
+    color: #1a1c2e;
+}
+
+/* Actions trong danh sách */
+.actions a {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--primary);
+    margin-right: 15px;
+}
+
+/* Buttons */
+.btn {
+    padding: 10px 22px;
+    border-radius: 10px;
+    font-weight: 600;
+    display: inline-block;
+    transition: all 0.2s;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #4361ee 0%, #3f37c9 100%);
+    color: white !important;
+    padding: 12px 24px;
+    border-radius: 12px;
+    font-weight: 700;
+    text-decoration: none; /* Bỏ gạch chân */
+    display: inline-block;
+    margin-bottom: 25px; /* Tạo khoảng cách với danh sách bên dưới */
+    box-shadow: 0 4px 15px rgba(67, 97, 238, 0.3);
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(67, 97, 238, 0.4);
+    background: linear-gradient(135deg, #3f37c9 0%, #4361ee 100%);
+}
+
+.btn-delete {
+    background: #fff1f2;
+    color: var(--danger);
+}
+
+.btn-delete:hover {
+    background: var(--danger);
+    color: white;
+}
+
+/* Form */
+input, textarea {
+    width: 100%;
+    padding: 12px 15px;
+    margin-top: 8px;
+    border: 2px solid #edf2f7;
+    border-radius: 10px;
+    font-family: inherit;
+    box-sizing: border-box;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: var(--primary);
+}
+
+/* Nội dung bài chi tiết */
+.content {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: #4a5568;
+    margin: 25px 0;
+    white-space: pre-wrap; /* Giúp xuống hàng đúng như khi nhập */
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #edf2f7;
+    margin: 20px 0;
+}
