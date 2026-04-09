@@ -66,7 +66,7 @@ app.listen(PORT, () => {
     console.log(`Sơ đồ các trang web:`);
     console.log(`1. Trang chủ:    http://localhost:${PORT}/`);
     console.log(`2. Danh sách:    http://localhost:${PORT}/list`);
-    console.log(`3. Chi tiết:     http://localhost:${PORT}/detail/1`);
+    console.log(`3. Chi tiết:     http://localhost:${PORT}/detail`);
     console.log(`4. Liên hệ:      http://localhost:${PORT}/contact`);
     console.log(`==============================================`);
 });
