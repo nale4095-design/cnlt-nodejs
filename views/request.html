@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Request Info</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <header><h1>REQUEST & HEADERS</h1></header>
+    <nav><a href="/">Quay lại trang chủ</a></nav>
+    <div class="container">
+        <h2>Dữ liệu từ Request Object</h2>
+        <pre id="data">Đang tải dữ liệu JSON...</pre>
+    </div>
+    <script>
+        fetch('/json-info').then(res => res.json()).then(data => {
+            document.getElementById('data').textContent = JSON.stringify(data, null, 2);
+        });
+    </script>
+</body>
+</html>
