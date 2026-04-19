@@ -1,0 +1,19 @@
+[4/12/2026, 11:11:19 PM] Trang: Streams
+HELLO NODEJS
+THIS IS STREAM DEMO[4/12/2026, 11:11:37 PM] Trang: Trang chủ
+[4/12/2026, 11:11:40 PM] Trang: Events
+[4/12/2026, 11:11:41 PM] Trang: Request
+[4/12/2026, 11:11:45 PM] Trang: Trang chủ
+[4/12/2026, 11:11:46 PM] Trang: Streams
+HELLO NODEJS
+THIS IS STREAM DEMO[4/12/2026, 11:12:15 PM] Trang: Trang chủ
+[4/12/2026, 11:12:26 PM] Trang: Events
+[4/12/2026, 11:12:35 PM] Trang: Request
+[4/12/2026, 11:12:46 PM] Trang: Streams
+HELLO NODEJS
+THIS IS STREAM DEMO[4/12/2026, 11:12:48 PM] Trang: Request
+[4/12/2026, 11:12:51 PM] Trang: Trang chủ
+[4/12/2026, 11:12:54 PM] Trang: Events
+[4/12/2026, 11:12:56 PM] Trang: Streams
+HELLO NODEJS
+THIS IS STREAM DEMO
