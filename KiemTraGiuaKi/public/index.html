@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Realtime Chat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="sidebar">
+        <h2>Online Users</h2>
+
+        <ul id="users"></ul>
+    </div>
+
+    <div class="chat-area">
+
+        <div class="top">
+            <input type="text" id="username" placeholder="Nhập tên">
+            <button onclick="joinChat()">Vào chat</button>
+        </div>
+
+        <h3 id="chatWith">Chưa chọn người chat</h3>
+
+        <div id="messages"></div>
+
+        <div class="bottom">
+            <input type="text" id="messageInput" placeholder="Nhập tin nhắn">
+            <button onclick="sendMessage()">Gửi</button>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="client.js"></script>
+
+</body>
+</html>
